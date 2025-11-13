@@ -1,0 +1,394 @@
+{
+  "designSystem": {
+    "metadata": {
+      "name": "Crypto Dashboard Design System",
+      "version": "1.0",
+      "description": "Modern financial dashboard with glassmorphism cards, vibrant crypto icons, and clean data presentation"
+    },
+
+    "colorPalette": {
+      "background": {
+        "primary": "#F5F5F7",
+        "card": "#FFFFFF",
+        "cardHover": "#FFFFFF",
+        "usage": "Main page background uses light gray, all cards use pure white"
+      },
+      "text": {
+        "primary": "#000000",
+        "secondary": "#6B6B6B",
+        "tertiary": "#9B9B9B",
+        "disabled": "#D1D1D6",
+        "usage": "Strict hierarchy - black for primary data, gray for labels"
+      },
+      "brand": {
+        "black": "#000000",
+        "usage": "Logo, primary buttons, key typography"
+      },
+      "semantic": {
+        "positive": "#34C759",
+        "positiveBackground": "#E8F8EC",
+        "negative": "#FF3B30",
+        "negativeBackground": "#FFE8E6",
+        "warning": "#FFCC00",
+        "warningBackground": "#FFF9E6",
+        "info": "#007AFF",
+        "usage": "Financial indicators, status badges, change indicators"
+      },
+      "cryptoIcons": {
+        "bitcoin": "#FF9500",
+        "ethereum": "#B47EFF",
+        "uniswap": "#FF007A",
+        "usdc": "#2775CA",
+        "eden": "#000000",
+        "externalAssets": "#B47EFF",
+        "usage": "Solid color backgrounds for crypto token icons - each token has unique color"
+      },
+      "borders": {
+        "default": "#E5E5EA",
+        "light": "#F0F0F2",
+        "focus": "#007AFF",
+        "usage": "Subtle borders on cards and inputs"
+      }
+    },
+
+    "typography": {
+      "fontFamilies": {
+        "primary": {
+          "family": "Inter, -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif",
+          "usage": "All interface text"
+        },
+        "tabular": {
+          "family": "SF Mono, Monaco, 'Cascadia Code', monospace",
+          "usage": "Financial data, numbers requiring alignment",
+          "featureSettings": "'tnum' on, 'lnum' on"
+        }
+      },
+      "scale": {
+        "displayLarge": {
+          "fontSize": "56px",
+          "lineHeight": "1.1",
+          "fontWeight": "600",
+          "letterSpacing": "-0.02em",
+          "color": "#000000",
+          "usage": "Large balance displays like '$135,687.64'",
+          "context": "Main balance card header"
+        },
+        "displayMedium": {
+          "fontSize": "40px",
+          "lineHeight": "1.2",
+          "fontWeight": "600",
+          "letterSpacing": "-0.015em",
+          "color": "#000000",
+          "usage": "Section totals like '$107,843.82'",
+          "context": "Portfolio and Rewards totals"
+        },
+        "displaySmall": {
+          "fontSize": "32px",
+          "lineHeight": "1.25",
+          "fontWeight": "600",
+          "letterSpacing": "-0.01em",
+          "color": "#000000",
+          "usage": "Summary totals"
+        },
+        "h1": {
+          "fontSize": "28px",
+          "lineHeight": "1.3",
+          "fontWeight": "600",
+          "letterSpacing": "-0.01em",
+          "color": "#000000",
+          "usage": "Section headers like 'Balances'"
+        },
+        "h2": {
+          "fontSize": "20px",
+          "lineHeight": "1.4",
+          "fontWeight": "600",
+          "letterSpacing": "0",
+          "color": "#000000",
+          "usage": "Card titles, asset names like 'BTC', 'ETH'"
+        },
+        "body": {
+          "fontSize": "15px",
+          "lineHeight": "1.5",
+          "fontWeight": "400",
+          "letterSpacing": "0",
+          "color": "#000000",
+          "usage": "Primary data values, amounts"
+        },
+        "bodySecondary": {
+          "fontSize": "15px",
+          "lineHeight": "1.5",
+          "fontWeight": "400",
+          "letterSpacing": "0",
+          "color": "#6B6B6B",
+          "usage": "Secondary labels, descriptions"
+        },
+        "caption": {
+          "fontSize": "13px",
+          "lineHeight": "1.4",
+          "fontWeight": "400",
+          "letterSpacing": "0",
+          "color": "#9B9B9B",
+          "usage": "Supporting text like 'Last 24 Hrs', sub-amounts"
+        },
+        "label": {
+          "fontSize": "13px",
+          "lineHeight": "1.4",
+          "fontWeight": "500",
+          "letterSpacing": "0",
+          "color": "#6B6B6B",
+          "usage": "Input labels, section labels"
+        },
+        "button": {
+          "fontSize": "14px",
+          "lineHeight": "1.4",
+          "fontWeight": "500",
+          "letterSpacing": "0",
+          "usage": "Button text"
+        }
+      },
+      "numberFormatting": {
+        "currency": {
+          "fontFeatureSettings": "'tnum' on, 'lnum' on",
+          "fontVariantNumeric": "tabular-nums lining-nums",
+          "usage": "All financial amounts for proper alignment"
+        },
+        "percentage": {
+          "fontFeatureSettings": "'tnum' on",
+          "usage": "Percentage changes"
+        }
+      },
+      "decimalStyling": {
+        "ghosted": {
+          "color": "#D1D1D6",
+          "usage": "Decimal portions of large amounts to emphasize whole numbers",
+          "context": "Applied to decimal part like '.64' in '$135,687.64'"
+        }
+      }
+    },
+
+    "spacing": {
+      "scale": {
+        "xs": "4px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        "4xl": "40px",
+        "5xl": "48px",
+        "6xl": "64px"
+      },
+      "cardSpacing": {
+        "padding": "24px",
+        "paddingLarge": "32px",
+        "gap": "16px",
+        "usage": "Internal card padding and element gaps"
+      },
+      "layoutSpacing": {
+        "containerPadding": "32px",
+        "sectionGap": "24px",
+        "cardGap": "16px",
+        "usage": "Page-level spacing"
+      }
+    },
+
+    "components": {
+      "cards": {
+        "primary": {
+          "background": "#FFFFFF",
+          "border": "1px solid #E5E5EA",
+          "borderRadius": "16px",
+          "padding": "24px",
+          "shadow": "0 1px 3px rgba(0, 0, 0, 0.04)",
+          "hover": {
+            "shadow": "0 4px 12px rgba(0, 0, 0, 0.08)",
+            "transform": "translateY(-1px)",
+            "transition": "all 200ms ease-in-out"
+          },
+          "usage": "Main content cards like Portfolio, Rewards",
+          "doNot": [
+            "Do NOT use gradients on card backgrounds",
+            "Do NOT use heavy shadows - keep subtle",
+            "Do NOT apply colors to card backgrounds - always white"
+          ]
+        },
+        "compact": {
+          "background": "#FFFFFF",
+          "border": "1px solid #E5E5EA",
+          "borderRadius": "12px",
+          "padding": "16px",
+          "shadow": "0 1px 2px rgba(0, 0, 0, 0.03)",
+          "usage": "Smaller metric cards within larger cards"
+        },
+        "membershipTier": {
+          "background": "#FFFFFF",
+          "border": "2px solid #E5E5EA",
+          "borderRadius": "24px",
+          "padding": "16px 24px",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "gap": "12px",
+          "usage": "Membership tier display badge"
+        }
+      },
+
+      "buttons": {
+        "primary": {
+          "background": "#000000",
+          "color": "#FFFFFF",
+          "border": "none",
+          "borderRadius": "24px",
+          "padding": "10px 20px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "iconColor": "#FFFFFF",
+          "hover": {
+            "background": "#1C1C1E",
+            "transform": "scale(1.02)"
+          },
+          "active": {
+            "background": "#000000",
+            "transform": "scale(0.98)"
+          },
+          "disabled": {
+            "background": "#E5E5EA",
+            "color": "#9B9B9B",
+            "cursor": "not-allowed"
+          },
+          "usage": "Primary actions like 'Send' button",
+          "doNot": [
+            "Do NOT add gradients to primary buttons",
+            "Do NOT use colors other than black for primary buttons"
+          ]
+        },
+        "secondary": {
+          "background": "#FFFFFF",
+          "color": "#000000",
+          "border": "1.5px solid #E5E5EA",
+          "borderRadius": "24px",
+          "padding": "10px 20px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "iconColor": "#000000",
+          "hover": {
+            "background": "#F5F5F7",
+            "borderColor": "#D1D1D6"
+          },
+          "active": {
+            "background": "#E5E5EA"
+          },
+          "usage": "Secondary actions like 'Receive' button"
+        },
+        "text": {
+          "background": "transparent",
+          "color": "#000000",
+          "border": "none",
+          "padding": "8px 12px",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "hover": {
+            "color": "#007AFF",
+            "background": "rgba(0, 122, 255, 0.05)"
+          },
+          "usage": "Text links like 'View Performance', 'Claim Rewards'"
+        },
+        "iconButton": {
+          "background": "transparent",
+          "border": "none",
+          "borderRadius": "8px",
+          "padding": "8px",
+          "iconColor": "#6B6B6B",
+          "hover": {
+            "background": "#F5F5F7",
+            "iconColor": "#000000"
+          },
+          "usage": "Icon-only buttons like hide/show toggles"
+        }
+      },
+
+      "icons": {
+        "cryptoToken": {
+          "container": {
+            "width": "40px",
+            "height": "40px",
+            "borderRadius": "50%",
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "usage": "Cryptocurrency token icons"
+          },
+          "bitcoin": {
+            "background": "#FF9500",
+            "iconColor": "#FFFFFF"
+          },
+          "ethereum": {
+            "background": "#B47EFF",
+            "iconColor": "#FFFFFF"
+          },
+          "uniswap": {
+            "background": "#FF007A",
+            "iconColor": "#FFFFFF"
+          },
+          "usdc": {
+            "background": "#2775CA",
+            "iconColor": "#FFFFFF"
+          },
+          "eden": {
+            "background": "#000000",
+            "iconColor": "#FFFFFF"
+          },
+          "externalAssets": {
+            "background": "#B47EFF",
+            "iconColor": "#FFFFFF"
+          },
+          "doNot": [
+            "Do NOT apply gradients to crypto icon backgrounds",
+            "Do NOT use the same color for different tokens",
+            "Do NOT add borders to crypto icons"
+          ]
+        },
+        "functional": {
+          "size": "20px",
+          "strokeWidth": "1.5px",
+          "color": "#6B6B6B",
+          "hover": {
+            "color": "#000000"
+          },
+          "usage": "UI icons like portfolio, gift, settings"
+        },
+        "navigation": {
+          "size": "20px",
+          "strokeWidth": "1.5px",
+          "color": "#000000",
+          "usage": "Navigation icons in buttons"
+        }
+      },
+
+      "badges": {
+        "changePositive": {
+          "background": "#E8F8EC",
+          "color": "#34C759",
+          "borderRadius": "6px",
+          "padding": "4px 8px",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "icon": "↑",
+          "usage": "Positive financial changes like '+ $1,050'"
+        },
+        "changeNegative": {
+          "background": "#FFE8E6",
+          "color": "#FF3B30",
+          "borderRadius": "6px",
+          "padding": "4px 8px",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "icon": "↓",
+          "usage": "Negative financial changes"
+        },
+        "percentage": {
+          "color": "#000000",
+          "fontSize": "13px",
+          "fontWeight": "400",
+          "icon": "↓ or ↑",
+          "iconColor": ",
