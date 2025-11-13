@@ -8,7 +8,7 @@ import ProductsTableLong from "./pages/ProductsTableLong.tsx";
 import ProductTablesLayout from "./pages/ProductTablesLayout.tsx";
 import AppLayout from "./AppLayout.tsx";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>

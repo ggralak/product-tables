@@ -1,9 +1,9 @@
 {
-  "name": "calculators",
+  "name": "product-tables",
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "description": "Mortgage and Saving Calculators",
+  "description": "Example of handling big data in tables",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
