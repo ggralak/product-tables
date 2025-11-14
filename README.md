@@ -4,6 +4,10 @@ This project demonstrates three different approaches to handling large datasets 
 
 **Note:** While the examples simulate server-side API calls (pagination, filtering, sorting), all data is generated client-side using the `generateProducts()` function. In a real application, these would be actual backend API requests.
 
+## Live Demo
+
+Check out the live example at: http://product-tables.ggralak.com/
+
 ## The Three Approaches
 
 ### 1. Paginated (ProductsTablePaginated.tsx)
@@ -65,7 +69,3 @@ These libraries would provide:
 npm install
 npm run dev
 ```
-
-## Live Demo
-
-Check out the live example at: http://product-tables.ggralak.com/
