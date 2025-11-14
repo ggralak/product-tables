@@ -65,7 +65,7 @@ const ProductsTablePaginated = () => {
     const [totalCount, setTotalCount] = useState(0);
 
     // Custom hooks for table state management
-    const { page, pageSize, setPage, setPageSize, resetToFirstPage } = usePagination(1, 25);
+    const { page, pageSize, setPage, setPageSize, resetToFirstPage } = usePagination(1, 10);
     const { sortBy, sortOrder, handleSort: handleSortColumn } = useTableSort<keyof ProductRow>('product_id');
     const { filters, handleFilterChange: handleFilterInput } = useTableFilters<keyof ProductRow>();
 
