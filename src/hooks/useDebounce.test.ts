@@ -211,7 +211,7 @@ describe('useDebounce', () => {
   it('should handle null and undefined values', () => {
     const { result, rerender } = renderHook(
       ({ value }) => useDebounce(value, 300),
-      { initialProps: { value: null as string | null } }
+      { initialProps: { value: null as string | null | undefined } }
     );
 
     expect(result.current).toBe(null);
@@ -224,7 +224,7 @@ describe('useDebounce', () => {
 
     expect(result.current).toBe('defined');
 
-    rerender({ value: undefined as string | undefined });
+    rerender({ value: undefined });
 
     act(() => {
       vi.advanceTimersByTime(300);
